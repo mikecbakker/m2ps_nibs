@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+<channel-adaptor name='ca-snk1' class="org.jpos.q2.iso.OneShotChannelAdaptor"
+	logger="Q2">
+	<channel class="org.jpos.iso.channel.XMLChannel" logger="Q2" packager="org.jpos.iso.packager.XMLPackager">
+		<property name="host" value="localhost" />
+		<property name="port" value="10006" />
+	</channel>
+	<in>qmux-snk-nibs1-send</in>
+ 	<out>qmux-snk-nibs1-receive</out>
+	<max-connections>5</max-connections>
+	<max-connect-attempts>3</max-connect-attempts>
+</channel-adaptor> 

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+
+<mux class="org.jpos.q2.iso.QMUX" logger="Q2" name="qmux-snk-nibs1">
+	<in>qmux-snk-nibs1-receive</in>
+	<out>qmux-snk-nibs1-send</out>
+</mux>

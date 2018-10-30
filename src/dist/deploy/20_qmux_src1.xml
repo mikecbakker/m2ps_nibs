@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+
+<mux class="org.jpos.q2.iso.QMUX" logger="Q2" name="qmux-src-nibs1">
+	<in>qmux-src-nibs1-receive</in>
+	<out>qmux-src-nibs1-send</out>
+	<request-listener class="com.m2ps.interchange.IsoMessageProcessorNibs" logger="Q2">
+		<property name="dest_qmux" value="qmux-snk-nibs1"/>
+		<property name="init_signon" value="true"/>
+	</request-listener>
+</mux>
